@@ -12,7 +12,8 @@
 
 
 ## Топология
-![image](https://github.com/MaximSSA39/Demo2024---1/assets/148869340/6b1b5fc4-1b75-43c4-b22c-d407e33d3e2f)
+![image](https://github.com/MaximSSA39/Demo2024---1/assets/148869340/0d18022d-4e35-4e69-b9cf-7bf3ebfd7eb9)
+
 
 
 ## Таблица сети

@@ -29,3 +29,69 @@
 | HQ-SRV         |      ens192    | 192.168.0.1    | /25                 | 192.168.0.2    |
 | BR-SRV         |      ens192    | 192.168.0.129  | /27                 | 192.168.0.130  |
 ---
+
+
+
+**IP-адрес машин**  
+```
+nano /etc/network/interfaces  
+```
+
+ISP:  
+```
+auto ens192  
+iface ens192 inet static  
+address 10.12.19.55  
+gateway 10.10.200.200  
+netmask 255.255.255.0  
+  
+auto ens224  
+iface ens224 inet static  
+address 192.168.0.162  
+netmask 255.255.255.252  
+
+auto ens256  
+iface ens256 inet static  
+address 192.168.0.166  
+netmask 255.255.255.252  
+```
+
+HQ-R:
+```
+auto ens192  
+iface ens192 inet static  
+address 192.168.0.165  
+netmask 255.255.255.252  
+
+auto ens224  
+iface ens224 inet static  
+address 192.168.0.2  
+netmask 255.255.255.224  
+```
+BR-R:
+```
+auto ens192  
+iface ens192 inet static  
+address 192.168.0.161  
+netmask 255.255.255.252  
+
+auto ens224  
+iface ens224 inet static  
+address 192.168.0.130  
+netmask 255.255.255.128  
+```
+HQ-SRV:
+```
+auto ens192  
+iface ens192 inet static  
+address 192.168.0.2  
+netmask 255.255.255.224  
+gateway 192.168.0.2  
+```
+BR-SRV
+```
+auto ens192  
+iface ens192 inet static  
+address 192.168.0.129  
+netmask 255.255.255.224
+```

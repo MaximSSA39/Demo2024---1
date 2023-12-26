@@ -95,5 +95,3 @@ iface ens192 inet static
 address 192.168.0.129  
 netmask 255.255.255.224
 ```
-## 2.
-Выйти из гх аккаунта
